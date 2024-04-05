@@ -21,7 +21,7 @@ const MainPage = () => {
       >
         <Grid container spacing={2} justifyContent="center">
           {/* Profile Column */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <Box
               sx={{
                 display: 'flex',
@@ -57,31 +57,44 @@ const MainPage = () => {
           </Grid>
 
           {/* Projects Column */}
-          <Grid item xs={12} md={8} >
-            <Grid container spacing={2} sx={{ pt: 7 }}>
-              <Grid item xs={12} sm={6} md={4}>
-                <ProjectComponent
-                  name="BoringTube"
-                  tag="Activo"
-                  link="https://boringtube.com"
-                  revenue="0"
-                  description="BoringTube es una plataforma donde hay contenido sano y no adictivo. Vídeos, podcasts y música sin algoritmo adictivo."  
-                  logo={`${process.env.PUBLIC_URL}/logo.png`} // Adjust the file name as necessary
-                />
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <ProjectComponent
-                  name="Lanmap"
-                  tag="Abandonado"
-                  link=""
-                  revenue="0"
-                  description="Lanmap permite a los estudiantes encontrar compañías donde puedan hacer prácticas."
-                  logo={`${process.env.PUBLIC_URL}/a.png`} // Adjust the file name as necessary
-                />
-              </Grid>
-              {/* More ProjectComponents can be added here following the same pattern */}
-            </Grid>
-          </Grid>
+<Grid item xs={12} md={6}>
+  <Grid container spacing={2} sx={{ pt: 7 }}>
+    <Grid item xs={12} sm={6} md={6}>
+      <ProjectComponent
+        name="BoringTube"
+        tag="Activo"
+        link="https://boringtube.com"
+        revenue="0"
+        description="BoringTube es una plataforma donde hay contenido sano y no adictivo. Vídeos, podcasts y música sin algoritmo adictivo."  
+        logo={`${process.env.PUBLIC_URL}/logo.png`} // Adjust the file name as necessary
+      />
+    </Grid>
+    <Grid item xs={12} sm={6} md={6}>
+      <ProjectComponent
+        name="Portorium"
+        tag="En desarrollo"
+        link="https://portorium.xyz"
+        revenue="0"
+        description="Portorium te protege de las distracciones. Es un bloquador de páginas web en forma de extensión de navegador."
+        logo={`${process.env.PUBLIC_URL}/portorium_logo.png`} 
+      />
+    </Grid> {/* This closing tag was missing */}
+    <Grid item xs={12} sm={6} md={6}>
+      <ProjectComponent
+        name="Lanmap"
+        tag="Abandonado"
+        link=""
+        revenue="0"
+        description="Lanmap permite a los estudiantes encontrar compañías donde puedan hacer prácticas."
+        logo={`${process.env.PUBLIC_URL}/a.png`} // Adjust the file name as necessary
+      />
+    </Grid>
+  </Grid>
+</Grid>
+
+         
+
+
         </Grid>
       </Box>
     </>
