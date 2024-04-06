@@ -81,6 +81,17 @@ const MainPage = () => {
     </Grid> {/* This closing tag was missing */}
     <Grid item xs={12} sm={6} md={6}>
       <ProjectComponent
+        name="Artifex"
+        tag="En desarrollo"
+        link=""
+        revenue="0"
+        description="Herramienta para crecer en Twitter."
+        logo={`${process.env.PUBLIC_URL}/icon128_artifex.png`} // Adjust the file name as necessary
+      />
+          </Grid>
+
+      <Grid item xs={12} sm={6} md={6}>
+      <ProjectComponent
         name="Lanmap"
         tag="Abandonado"
         link=""
