@@ -42,70 +42,66 @@ const MainPage = () => {
               </Typography>
               <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
                 <LocationOn color="action" />
-                <Typography variant="body2" sx={{ fontSize: '1rem' }}>País Vasco</Typography>
+                <Typography variant="body2" sx={{ fontSize: '1rem' }}>Basque Country</Typography>
               </Box>
               <Typography variant="body1" sx={{ mt: 2, textAlign: 'left', fontSize: '1rem' }}>
-                Hola, me llamo Xuban y desarrollo páginas webs en mi tiempo libre. Estoy particularmente interesado en la adicción al contenido online y como combatirla. Para ello, estoy desarrollando aplicaciones que me ayuden a mí y con suerte a otros a reducir su tiempo online y augmentar la calidad del mismo.
+                Hello, my name is Xuban, and I develop websites in my free time. I'm particularly interested in online content addiction and how to combat it. For this, I'm developing applications that help me, and hopefully others, to reduce their online time and improve its quality.
               </Typography>
               <Box sx={{ display: 'flex', mt: 2 }}>
                 <IconButton href="https://twitter.com/EHxuban11" color="inherit"><Twitter /></IconButton>
                 <IconButton href="https://github.com/EHxuban11" color="inherit"><GitHub /></IconButton>
                 <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>
-{ /* <IconButton href="https://instagram.com" color="inherit"><Instagram /></IconButton> */}
+                {/* <IconButton href="https://instagram.com" color="inherit"><Instagram /></IconButton> */}
               </Box>
             </Box>
           </Grid>
 
           {/* Projects Column */}
-<Grid item xs={12} md={6}>
-  <Grid container spacing={2} sx={{ pt: 7 }}>
-    <Grid item xs={12} sm={6} md={6}>
-      <ProjectComponent
-        name="BoringTube"
-        tag="Activo"
-        link="https://boringtube.com"
-        revenue="0"
-        description="BoringTube es una plataforma donde hay contenido sano y no adictivo. Vídeos, podcasts y música sin algoritmo adictivo."  
-        logo={`${process.env.PUBLIC_URL}/logo.png`} // Adjust the file name as necessary
-      />
-    </Grid>
-    <Grid item xs={12} sm={6} md={6}>
-      <ProjectComponent
-        name="Portorium"
-        tag="En desarrollo"
-        link="https://portorium.xyz"
-        revenue="0"
-        description="Portorium te protege de las distracciones. Es un bloquador de páginas web en forma de extensión de navegador."
-        logo={`${process.env.PUBLIC_URL}/portorium_logo.png`} 
-      />
-    </Grid> {/* This closing tag was missing */}
-    <Grid item xs={12} sm={6} md={6}>
-      <ProjectComponent
-        name="Artifex"
-        tag="En desarrollo"
-        link=""
-        revenue="0"
-        description="Herramienta para crecer en Twitter."
-        logo={`${process.env.PUBLIC_URL}/icon128_artifex.png`} // Adjust the file name as necessary
-      />
+          <Grid item xs={12} md={6}>
+            <Grid container spacing={2} sx={{ pt: 7 }}>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="BoringTube"
+                  tag="Active"
+                  link="https://boringtube.com"
+                  revenue="0"
+                  description="BoringTube is a platform where you can find healthy and non-addictive content. Videos, podcasts, and music without an addictive algorithm."  
+                  logo={`${process.env.PUBLIC_URL}/logo.png`} // Adjust the file name as necessary
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Portorium"
+                  tag="In development"
+                  link="https://portorium.xyz"
+                  revenue="0"
+                  description="Portorium protects you from distractions. It's a web page blocker in the form of a browser extension."
+                  logo={`${process.env.PUBLIC_URL}/portorium_logo.png`} 
+                />
+              </Grid> {/* This closing tag was missing */}
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Artifex"
+                  tag="In development"
+                  link=""
+                  revenue="0"
+                  description="A tool for growing on Twitter."
+                  logo={`${process.env.PUBLIC_URL}/icon128_artifex.png`} // Adjust the file name as necessary
+                />
+              </Grid>
+
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Lanmap"
+                  tag="Abandoned"
+                  link=""
+                  revenue="0"
+                  description="Lanmap allows students to find companies where they can do internships."
+                  logo={`${process.env.PUBLIC_URL}/a.png`} // Adjust the file name as necessary
+                />
+              </Grid>
+            </Grid>
           </Grid>
-
-      <Grid item xs={12} sm={6} md={6}>
-      <ProjectComponent
-        name="Lanmap"
-        tag="Abandonado"
-        link=""
-        revenue="0"
-        description="Lanmap permite a los estudiantes encontrar compañías donde puedan hacer prácticas."
-        logo={`${process.env.PUBLIC_URL}/a.png`} // Adjust the file name as necessary
-      />
-    </Grid>
-  </Grid>
-</Grid>
-
-         
-
-
         </Grid>
       </Box>
     </>
