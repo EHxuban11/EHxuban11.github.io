@@ -4,12 +4,25 @@ import { Card, CardActionArea, CardContent, Typography, Box, Chip, Snackbar } fr
 const ProjectComponent = ({ name, tag, link, revenue, description, logo }) => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
+  // Function to determine the chip style based on the tag
+  const getTagStyle = (tag) => {
+    switch (tag) {
+      case 'Abandoned':
+        return { bgcolor: 'grey', color: 'white' };
+      case 'In development':
+        return { bgcolor: 'orange', color: 'black' };
+      case 'Active':
+        return { bgcolor: 'green', color: 'white' };
+      default:
+        return { bgcolor: 'purple', color: 'white' }; // Fallback style
+    }
+  };
+
   const handleCardClick = (event) => {
     if (!link) {
       event.preventDefault(); // Prevent the navigation
       setOpenSnackbar(true); // Show the Snackbar notification
     }
-    // If there's a link, the CardActionArea will handle navigation as usual
   };
 
   return (
@@ -41,8 +54,8 @@ const ProjectComponent = ({ name, tag, link, revenue, description, logo }) => {
               </Typography>
             </Box>
             <Box display="flex" alignItems="center">
-              <Chip label={`${revenue}€/mes`} size="small" sx={{ mr: 1, bgcolor: '#f5f5f5' }} />
-              <Chip label={tag} size="small" sx={{ bgcolor: 'purple', color: 'white' }} />
+              <Chip label={`${revenue}$/month`} size="small" sx={{ mr: 1, bgcolor: '#f5f5f5' }} />
+              <Chip label={tag} size="small" sx={getTagStyle(tag)} />
             </Box>
           </Box>
           <Typography variant="body2" color="text.secondary" sx={{ mt: 1, textAlign: 'left' }}>
