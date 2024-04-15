@@ -66,7 +66,37 @@ const MainPage = () => {
                   link="https://boringtube.com"
                   revenue="0"
                   description="BoringTube is a platform where you can find healthy and non-addictive content. Videos, podcasts, and music without an addictive algorithm."  
-                  logo={`${process.env.PUBLIC_URL}/logo.png`} // Adjust the file name as necessary
+                  logo={`${process.env.PUBLIC_URL}/logo.png`} 
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Artifex"
+                  tag="Active"
+                  link="https://chromewebstore.google.com/detail/artifex/cmbnelefoiiihdobcmhalkopidbbpklo"
+                  revenue="0"
+                  description="A tool for growing on Twitter. Define your daily replies and likes and let Artifex do the rest."
+                  logo={`${process.env.PUBLIC_URL}/icon128_artifex.png`} 
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Xuban (personal brand)"
+                  tag="Active"
+                  link="https://twitter.com/EHxuban11"
+                  revenue="0"
+                  description="I'm creating my personal brand to share my thoughts and projects."
+                  logo={`${process.env.PUBLIC_URL}/profile.png`} 
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="My notion templates"
+                  tag="Active"
+                  link="https://ehxuban11.gumroad.com/"
+                  revenue="0"
+                  description="I provide high quality notion templates in my Gumroad store."
+                  logo={`${process.env.PUBLIC_URL}/gumroad_logo.png`} 
                 />
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
@@ -78,17 +108,9 @@ const MainPage = () => {
                   description="Portorium protects you from distractions. It's a web page blocker in the form of a browser extension."
                   logo={`${process.env.PUBLIC_URL}/portorium_logo.png`} 
                 />
-              </Grid> {/* This closing tag was missing */}
-              <Grid item xs={12} sm={6} md={6}>
-                <ProjectComponent
-                  name="Artifex"
-                  tag="In development"
-                  link=""
-                  revenue="0"
-                  description="A tool for growing on Twitter."
-                  logo={`${process.env.PUBLIC_URL}/icon128_artifex.png`} // Adjust the file name as necessary
-                />
               </Grid>
+              
+              
 
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
@@ -97,9 +119,10 @@ const MainPage = () => {
                   link=""
                   revenue="0"
                   description="Lanmap allows students to find companies where they can do internships."
-                  logo={`${process.env.PUBLIC_URL}/a.png`} // Adjust the file name as necessary
+                  logo={`${process.env.PUBLIC_URL}/a.png`} 
                 />
               </Grid>
+              
             </Grid>
           </Grid>
         </Grid>
