@@ -9,6 +9,8 @@ const ProjectComponent = ({ name, tag, link, revenue, description, logo }) => {
     switch (tag) {
       case 'Abandoned':
         return { bgcolor: 'grey', color: 'white' };
+      case 'Idea':
+        return { bgcolor: 'grey', color: 'white' };
       case 'In development':
         return { bgcolor: 'orange', color: 'black' };
       case 'Active':

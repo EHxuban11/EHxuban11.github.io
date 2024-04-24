@@ -109,6 +109,16 @@ const MainPage = () => {
                   logo={`${process.env.PUBLIC_URL}/portorium_logo.png`} 
                 />
               </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
+                  name="Dominus"
+                  tag="Idea"
+                  link=""
+                  revenue="0"
+                  description="Dominus is an Android launcher which destroys your phone addiction"
+                  logo={`${process.env.PUBLIC_URL}/a.png`} 
+                />
+              </Grid>
               
               
 
