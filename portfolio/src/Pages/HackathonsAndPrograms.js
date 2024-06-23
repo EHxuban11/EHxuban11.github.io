@@ -38,23 +38,27 @@ function HackathonsAndPrograms() {
                   media={[
                     { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_team.jpg` },
                     { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_techstack.jpg` },
-                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_paris.jpg` },
                     { type: 'video', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_presentations.mp4` },
-
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_paris.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_mistral_ceo.jpg` },
                     { type: 'video', src: 'https://www.youtube.com/watch?v=dg4Jakp33_g' }
                   ]}
                 />
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
-                  name="24 Ori"
+                  name="24 Ori Hackathon"
                   tags={['Corse', '2023']}
-                  link=""
+                  link="https://github.com/Brohoya/BioPhonia-24h"
                   revenue=""
-                  description=""
+                  description="The 24 Ori hackaton took place in Ajaccio, the capital city of Corsica. We found a technical solution for the BioPhonia startup company and implemented it in python and audacity. The github repo is available. We won the the third place price!"
                   logo={`${process.env.PUBLIC_URL}/Hackatons/logo/24ori_logo.png`}
+                  
                   media={[
-                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/logo/24ori_logo.png` }
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_corse_final.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_corse_nomadexam.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_corse_powerpoint.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_corse_prix.png` },
                   ]}
                 />
               </Grid>
@@ -64,23 +68,28 @@ function HackathonsAndPrograms() {
                   tags={['Senegal', '2023']}
                   link=""
                   revenue=""
-                  description=""
+                  description="We had the incredible opportunity to spend a week in Senegal, Dakar and Saint Louis, to work on entreprenerial projects. "
                   logo={`${process.env.PUBLIC_URL}/Hackatons/logo/ABC_logo.png`}
                   media={[
-                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/logo/ABC_logo.png` }
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_senegal_flag.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_senegal_team.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_senegal_statue.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_senegal_goree.jpg` }
                   ]}
                 />
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
-                  name="ActinSpace Bidart"
+                  name="ActinSpace Hackathon"
                   tags={['Bidart', '2022']}
                   link=""
                   revenue=""
-                  description=""
+                  description="Hackaton with where we worked on projects with the help of ESA people. I learned about the different satellite orbits and the issue of space debrees. We worked on a system to recover satellites."
                   logo={`${process.env.PUBLIC_URL}/Hackatons/logo/actinspace_logo.png`}
                   media={[
-                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/logo/actinspace_logo.png` }
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_actinspace_final.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_actinspace_ad.jpg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_actinspace_prototype.jpg` }
                   ]}
                 />
               </Grid>
