@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography, Avatar, IconButton, CssBaseline } from '@mui/material';
-import { Twitter, GitHub, YouTube, Instagram, LocationOn } from '@mui/icons-material';
+import { Twitter, GitHub, YouTube, Instagram, LocationOn, LinkedIn} from '@mui/icons-material';
 
 import ProjectComponent from '../Components/ProjectComponent';
 
