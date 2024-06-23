@@ -50,7 +50,7 @@ const MainPage = () => {
               <Box sx={{ display: 'flex', mt: 2 }}>
                 <IconButton href="https://twitter.com/EHxuban11" color="inherit"><Twitter /></IconButton>
                 <IconButton href="https://github.com/EHxuban11" color="inherit"><GitHub /></IconButton>
-                <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>
+                {/* <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>*/}
                 {/* <IconButton href="https://instagram.com" color="inherit"><Instagram /></IconButton> */}
               </Box>
             </Box>
