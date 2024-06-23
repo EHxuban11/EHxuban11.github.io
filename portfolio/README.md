@@ -4,6 +4,8 @@ npm run deploy
 
 # More info about how this works.
 Develop in the main branch
+install the gh-pages package:     npm install gh-pages --save-dev
+
 Deploy running "npm run deploy" command
 
 For deploy to work you need to have nodejs and make npm install in the main branch inside portfolio. Once that's setted up, the npm run deploy will work.
