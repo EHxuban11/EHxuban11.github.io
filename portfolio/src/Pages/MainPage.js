@@ -48,6 +48,7 @@ const MainPage = () => {
                 Hello, my name is Xuban, and I develop websites in my free time. I'm particularly interested in online content addiction and how to combat it. For this, I'm developing applications that help me, and hopefully others, to reduce their online time and improve its quality.
               </Typography>
               <Box sx={{ display: 'flex', mt: 2 }}>
+                <IconButton href="https://www.linkedin.com/in/xuban-ceccon" color="inherit"><LinkedIn /></IconButton>
                 <IconButton href="https://twitter.com/EHxuban11" color="inherit"><Twitter /></IconButton>
                 <IconButton href="https://github.com/EHxuban11" color="inherit"><GitHub /></IconButton>
                 {/* <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>*/}
