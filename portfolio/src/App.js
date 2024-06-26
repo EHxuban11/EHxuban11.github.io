@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Box, CssBaseline, Button, Container } from '@mui/material';
 import About from './Pages/About';
 import PersonalProjects from './Pages/PersonalProjects';
@@ -29,7 +29,7 @@ function App() {
         </AppBar>
         <Box sx={{ pt: 8 }}>
           <Routes>
-            <Route exact path="/" element={<About />} /> 
+            <Route exact path="/" element={<About />} />
             <Route path="/personal-projects" element={<PersonalProjects />} />
             <Route path="/hackathons-and-programs" element={<HackathonsAndPrograms />} />
             <Route path="/tools" element={<Tools />} />
