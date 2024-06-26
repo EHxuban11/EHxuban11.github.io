@@ -13,8 +13,8 @@ const MainPage = () => {
           flexGrow: 1,
           overflow: 'hidden',
           px: 3,
-          bgcolor: '#e6e6e6', // Background color
-          color: '#5a5a5a', // Text color for all child components
+          bgcolor: '#e6e6e6', 
+          color: '#5a5a5a', 
           minHeight: '100vh',
           fontFamily: 'Roboto',
         }}
@@ -51,7 +51,7 @@ const MainPage = () => {
                 <IconButton href="https://www.linkedin.com/in/xuban-ceccon" color="inherit"><LinkedIn /></IconButton>
                 <IconButton href="https://twitter.com/EHxuban11" color="inherit"><Twitter /></IconButton>
                 <IconButton href="https://github.com/EHxuban11" color="inherit"><GitHub /></IconButton>
-                {/* <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>*/}
+                {/* <IconButton href="https://www.youtube.com/@monchannelxub" color="inherit"><YouTube /></IconButton>*/}
                 {/* <IconButton href="https://instagram.com" color="inherit"><Instagram /></IconButton> */}
               </Box>
             </Box>

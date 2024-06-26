@@ -23,8 +23,8 @@ function About() {
           flexGrow: 1,
           overflow: 'hidden',
           px: 3,
-          bgcolor: '#e6e6e6', // Background color
-          color: '#5a5a5a', // Text color for all child components
+          bgcolor: '#e6e6e6', 
+          color: '#5a5a5a', 
           minHeight: '100vh',
           fontFamily: 'Roboto',
         }}
@@ -58,7 +58,6 @@ function About() {
                   </Box>
                   <Divider sx={{ mb: 4 }} />
                   <Timeline position="alternate">
-                    {/* Most recent first */}
                     <TimelineItem>
                       <TimelineOppositeContent>
                         <Typography variant="body2" color="textSecondary">
