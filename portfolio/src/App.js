@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Box, CssBaseline, Button, Container } from '@mui/material';
 import About from './Pages/About';
 import PersonalProjects from './Pages/PersonalProjects';
@@ -16,14 +16,13 @@ function App() {
           <Container maxWidth="md">
             <Toolbar sx={{ justifyContent: 'space-between' }}>
               <Typography variant="h6" component="div">
-                My App
+                Xuban C.
               </Typography>
               <Box sx={{ display: 'flex' }}>
-                <Button color="inherit" component={Link} to="/about">Home</Button>
-                <Button color="inherit" component={Link} to="/personal-projects">Personal Projects</Button>
-                <Button color="inherit" component={Link} to="/hackathons-and-programs">Hackathons and Programs</Button>
-                <Button color="inherit" component={Link} to="/tools">Tools</Button>
                 <Button color="inherit" component={Link} to="/about">About</Button>
+                <Button color="inherit" component={Link} to="/personal-projects">Personal Projects</Button>
+                <Button color="inherit" component={Link} to="/hackathons-and-programs">Hackathons</Button>
+                {/*<Button color="inherit" component={Link} to="/tools">Tools</Button>*/}
               </Box>
             </Toolbar>
           </Container>
