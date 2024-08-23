@@ -79,6 +79,16 @@ function PersonalProjects() {
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
+                  name="Matado Por Google"
+                  tags={['Active']}
+                  link="https://matadoporgoogle.vercel.app/"
+                  revenue="0"
+                  description="Matado Por Google es la lista de más de 300 servicios que Google ha matado. Este proyecto es un fork de Killed By Google pero traducido gracias a la API de OpenAI"
+                  logo={`${process.env.PUBLIC_URL}/matadoporgoogle.svg`}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
                   name="Dominus"
                   tags={['Idea']}
                   link=""
@@ -97,6 +107,7 @@ function PersonalProjects() {
                   logo={`${process.env.PUBLIC_URL}/a.png`}
                 />
               </Grid>
+              
             </Grid>
           </Grid>
         </Grid>
