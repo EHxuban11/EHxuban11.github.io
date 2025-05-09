@@ -10,25 +10,28 @@ const ProjectComponent = ({ name, tags, link, revenue, description, logo, media 
   const getTagStyle = (tag) => {
     switch (tag) {
       case 'Abandoned':
-        return { bgcolor: 'grey', color: 'white' };
+        return { bgcolor: '#757575', color: 'white' };   // Grey 600
       case 'Idea':
-        return { bgcolor: 'grey', color: 'white' };
+        return { bgcolor: '#FFEB3B', color: 'black' };   // Yellow 300
       case 'In development':
-        return { bgcolor: 'orange', color: 'black' };
+        return { bgcolor: '#FFC107', color: 'black' };   // Amber 500
       case 'Active':
-        return { bgcolor: 'green', color: 'white' };
+        return { bgcolor: '#4CAF50', color: 'white' };   // Green 500
       case '2021':
-        return { bgcolor: 'blue', color: 'white' };
+        return { bgcolor: '#2196F3', color: 'white' };   // Blue 500
       case '2022':
-        return { bgcolor: 'red', color: 'white' };
+        return { bgcolor: '#E91E63', color: 'white' };   // Pink 500
       case '2023':
-        return { bgcolor: 'purple', color: 'white' };
+        return { bgcolor: '#9C27B0', color: 'white' };   // Purple 500
       case '2024':
-        return { bgcolor: 'teal', color: 'white' };
+        return { bgcolor: '#00BCD4', color: 'black' };   // Cyan 500
+      case '2025':
+        return { bgcolor: '#FF9800', color: 'black' };   // Orange 500
       default:
-        return { bgcolor: 'grey', color: 'white' }; // Neutral grey for other tags
+        return { bgcolor: '#757575', color: 'white' };   // Fallback: Grey 600
     }
   };
+  
 
   const handleCardClick = (event) => {
     if (!link) {

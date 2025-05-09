@@ -19,21 +19,32 @@ function App() {
                 Xuban C.
               </Typography>
               <Box sx={{ display: 'flex' }}>
-                <Button color="inherit" component={Link} to="/about">About</Button>
-                <Button color="inherit" component={Link} to="/personal-projects">Personal Projects</Button>
-                <Button color="inherit" component={Link} to="/hackathons-and-programs">Hackathons</Button>
-                {/*<Button color="inherit" component={Link} to="/tools">Tools</Button>*/}
+                {/*
+                <Button color="inherit" component={Link} to="/about">
+                  About
+                </Button>
+                <Button color="inherit" component={Link} to="/personal-projects">
+                  Personal Projects
+                </Button>
+                */}
+                <Button color="inherit" component={Link} to="/hackathons-and-programs">
+                  Hackathons
+                </Button>
+                {/* <Button color="inherit" component={Link} to="/tools">Tools</Button> */}
               </Box>
             </Toolbar>
           </Container>
         </AppBar>
+
         <Box sx={{ pt: 8 }}>
           <Routes>
+            {/*
             <Route exact path="/" element={<About />} />
             <Route path="/personal-projects" element={<PersonalProjects />} />
+            <Route path="/about" element={<About />} />
+            */}
             <Route path="/hackathons-and-programs" element={<HackathonsAndPrograms />} />
             <Route path="/tools" element={<Tools />} />
-            <Route path="/about" element={<About />} />
           </Routes>
         </Box>
       </div>

@@ -29,6 +29,20 @@ function HackathonsAndPrograms() {
             <Grid container spacing={2} sx={{ pt: 7 }}>
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
+                  name="HackUPC"
+                  tags={['Barcelona', '2025']}
+                  link="https://devpost.com/software/getlosttogether"
+                  revenue=""
+                  description="The HackUPC hackathon took place in Barcelona and was a great experience. I met a lot of interesting people which gave me energy to work on my project. The project was an app for a group of friends to select their next travel destination."
+                  logo={`${process.env.PUBLIC_URL}/Hackatons/logo/hack_upc_logo.jpeg`}
+                  media={[
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_hackupc_1.jpeg` },
+                    { type: 'image', src: `${process.env.PUBLIC_URL}/Hackatons/Images/carrousel_hackupc_2.jpeg `}
+                  ]}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <ProjectComponent
                   name="Mistral Hackathon"
                   tags={['Paris', '2024']}
                   link="https://devpost.com/software/web-sanity"
@@ -45,6 +59,7 @@ function HackathonsAndPrograms() {
                   ]}
                 />
               </Grid>
+              
               <Grid item xs={12} sm={6} md={6}>
                 <ProjectComponent
                   name="24 Ori Hackathon"
