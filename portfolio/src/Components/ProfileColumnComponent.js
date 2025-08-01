@@ -1,6 +1,21 @@
 import React from 'react';
-import { Box, Typography, Avatar, List, ListItem, ListItemIcon, ListItemText, IconButton } from '@mui/material';
-import { LinkedIn, Twitter, GitHub, Email, Language, LocationOn } from '@mui/icons-material';
+import {
+  Box,
+  Typography,
+  Avatar,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText
+} from '@mui/material';
+import {
+  LinkedIn,
+  Twitter,
+  GitHub,
+  Email,
+  Language,
+  LocationOn
+} from '@mui/icons-material';
 
 const ProfileColumn = () => {
   return (
@@ -12,13 +27,13 @@ const ProfileColumn = () => {
         p: 4,
         maxWidth: 360,
         margin: 'auto',
-        bgcolor: 'transparent', // Restore transparent background to inherit #e6e6e6 from About page
+        bgcolor: 'transparent',
       }}
     >
       <Avatar
         alt="Profile Picture"
         src={`${process.env.PUBLIC_URL}/profile.png`}
-        sx={{ width: 200, height: 200, mb: 2 }} // Restore original avatar size and spacing
+        sx={{ width: 200, height: 200, mb: 2 }}
       />
       <Typography
         variant="h5"
@@ -37,7 +52,10 @@ const ProfileColumn = () => {
         variant="body1"
         sx={{ mt: 2, textAlign: 'left', fontSize: '1rem', lineHeight: 1.6, fontFamily: 'Roboto, sans-serif' }}
       >
-        Hi! I'm an engineer from the Basque Country. I work in the cooperative company Ikerlan doing consulting on Cybersecurity (secure boot of microcontrollers) and research in the area of AI (computer vision) safety. Previously I worked in the startup FLEETI in the IoT domain. My areas of interest are Startups and Machine Learning. I'm building YawningFace to develop productivity tools.
+        Hi! I'm an engineer from the Basque Country. I work in the cooperative company Ikerlan doing consulting
+        on Cybersecurity (secure boot of microcontrollers) and research in the area of AI (computer vision)
+        safety. Previously I worked in the startup FLEETI in the IoT domain. My areas of interest are Startups
+        and Machine Learning. I'm building YawningFace to develop productivity tools.
       </Typography>
 
       <Box sx={{ mt: 2, width: '100%' }}>
@@ -57,6 +75,7 @@ const ProfileColumn = () => {
               primaryTypographyProps={{ fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
             />
           </ListItem>
+
           <ListItem disablePadding>
             <ListItemIcon>
               <Email sx={{ color: 'action' }} />
@@ -66,6 +85,7 @@ const ProfileColumn = () => {
               primaryTypographyProps={{ fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
             />
           </ListItem>
+
           <ListItem disablePadding>
             <ListItemIcon>
               <LinkedIn sx={{ color: 'action' }} />
@@ -81,6 +101,7 @@ const ProfileColumn = () => {
               </a>
             </ListItemText>
           </ListItem>
+
           <ListItem disablePadding>
             <ListItemIcon>
               <Language sx={{ color: 'action' }} />
@@ -96,19 +117,39 @@ const ProfileColumn = () => {
               </a>
             </ListItemText>
           </ListItem>
-        </List>
-      </Box>
 
-      <Box sx={{ display: 'flex', mt: 2 }}>
-        <IconButton href="https://www.linkedin.com/in/xuban-ceccon" target="_blank" rel="noopener noreferrer" color="inherit">
-          <LinkedIn />
-        </IconButton>
-        <IconButton href="https://twitter.com/EHxuban11" target="_blank" rel="noopener noreferrer" color="inherit">
-          <Twitter />
-        </IconButton>
-        <IconButton href="https://github.com/EHxuban11" target="_blank" rel="noopener noreferrer" color="inherit">
-          <GitHub />
-        </IconButton>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <Twitter sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText>
+              <a
+                href="https://twitter.com/EHxuban11"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+              >
+                twitter.com/EHxuban11
+              </a>
+            </ListItemText>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <GitHub sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText>
+              <a
+                href="https://github.com/EHxuban11"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+              >
+                github.com/EHxuban11
+              </a>
+            </ListItemText>
+          </ListItem>
+        </List>
       </Box>
     </Box>
   );
