@@ -47,37 +47,17 @@ function About() {
               <Container>
                 <Paper elevation={3} sx={{ padding: 3 }}>
 
-                  {/* Highlights & Interests */}
                   <Typography
                     variant="h4"
                     component="h1"
                     gutterBottom
                     sx={{ fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}
                   >
-                    Highlights & Interests
+                    About Me
                   </Typography>
-                  <Typography
-                    variant="body1"
-                    paragraph
-                    sx={{ mb: 3, fontFamily: 'Roboto, sans-serif' }}
-                  >
-                    This page showcases projects, interests, and hackathon highlights I don't emphasize on LinkedIn. Explore my work and passions below!
-                  </Typography>
+                  
 
-                  {/* LinkedIn Button */}
-                  <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      startIcon={<LinkedInIcon />}
-                      href="https://www.linkedin.com/in/xuban-ceccon"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{ fontSize: '1rem', padding: '8px 16px' }}
-                    >
-                      View Full Profile on LinkedIn
-                    </Button>
-                  </Box>
+                  
 
                   <Divider sx={{ mb: 3 }} />
 
@@ -189,7 +169,7 @@ function About() {
                     paragraph
                     sx={{ mb: 3, fontFamily: 'Roboto, sans-serif' }}
                   >
-                    I've tackled exciting challenges at hackathons, building prototypes in AI, IoT, and more. Check out my experiences below or visit my Hackathons page for more!
+                    I eased in hackathons participating as a trasnlator in the 24h de l'innovation. I really liked the atmosphere started to participate in more hackathons. Aside from the ones in my uni in Bidart, I've been to hackathons in Corsica, Dakar, Barcelona and Paris. 
                   </Typography>
                   <Grid container spacing={2} sx={{ mb: 3 }}>
                     <Grid item xs={12} sm={6} md={6}>
@@ -285,8 +265,35 @@ function About() {
                       />
                     </Grid>
                   </Grid>
-                  {/* “Explore More Hackathons” button removed */}
-
+                  <Typography
+                    variant="h5"
+                    component="h2"
+                    gutterBottom
+                    sx={{ fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}
+                  >
+                    Academic and Work Background
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    paragraph
+                    sx={{ mb: 3, fontFamily: 'Roboto, sans-serif' }}
+                  >
+                    Engineering degree from ESTIA and a computer and machine vision MSc from Cranfield University. I work as a consultant and researcher in Ikerlan. For the up to date Academic and Work profile, head to my LinkedIn: 
+                    {/* LinkedIn Button */}
+                  </Typography>
+                  <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      startIcon={<LinkedInIcon />}
+                      href="https://www.linkedin.com/in/xuban-ceccon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ fontSize: '1rem', padding: '8px 16px' }}
+                    >
+                      View Full Profile on LinkedIn
+                    </Button>
+                  </Box>
                 </Paper>
               </Container>
             </Box>
