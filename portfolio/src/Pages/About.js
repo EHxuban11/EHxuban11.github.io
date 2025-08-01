@@ -19,6 +19,7 @@ import PsychologyIcon from '@mui/icons-material/Psychology';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import ProfileColumn from '../Components/ProfileColumnComponent';
 import ProjectComponent from '../Components/ProjectComponent';
+import ProjectsComponent from '../Components/ProjectsComponent';
 
 function About() {
   return (
@@ -60,57 +61,41 @@ function About() {
                   
 
                   <Divider sx={{ mb: 3 }} />
-
-                  {/* Projects */}
                   <Typography
                     variant="h5"
                     component="h2"
                     gutterBottom
                     sx={{ fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}
                   >
-                    Projects
+                    Academic and Work Background
                   </Typography>
-                  <Grid container spacing={2} sx={{ mb: 3 }}>
-                    <Grid item xs={12} sm={6}>
-                      <ProjectComponent
-                        name="YawningFace"
-                        tags={['Productivity', 'Open Source']}
-                        link="https://github.com/EHxuban11/yawningface"
-                        revenue=""
-                        description="Open-source productivity tools to develop apps that reduce online time and improve focus. Built with React and other technologies."
-                        logo={`${process.env.PUBLIC_URL}/projects/yawningface_logo.png`}
-                        media={[]}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <ProjectComponent
-                        name="COCO Body Part Dataset"
-                        tags={['Computer Vision', 'Hugging Face']}
-                        link="https://huggingface.co/Xuban/coco_body_part"
-                        revenue=""
-                        description="Updated dataset on Hugging Face for body part detection in computer vision tasks."
-                        logo={`${process.env.PUBLIC_URL}/projects/coco_body_part_logo.png`}
-                        media={[]}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <ProjectComponent
-                        name="YOLO Weights Database"
-                        tags={['Computer Vision', 'Hugging Face']}
-                        link="https://huggingface.co/Xuban/yolo_weights_database"
-                        revenue=""
-                        description="Pre-trained YOLO model weights for object detection, hosted on Hugging Face."
-                        logo={`${process.env.PUBLIC_URL}/projects/yolo_weights_logo.png`}
-                        media={[]}
-                      />
-                    </Grid>
-                  </Grid>
                   <Typography
-                    variant="body2"
-                    sx={{ mt: 1, mb: 3, fontFamily: 'Roboto, sans-serif' }}
+                    variant="body1"
+                    paragraph
+                    sx={{ mb: 3, fontFamily: 'Roboto, sans-serif' }}
                   >
-                    More projects coming soon—check my GitHub or Hugging Face for updates.
+                    Engineering degree from ESTIA and a computer and machine vision MSc from Cranfield University. I work as a consultant and researcher in Ikerlan. For the up to date Academic and Work profile, head to my LinkedIn: 
+                    {/* LinkedIn Button */}
                   </Typography>
+                  <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      startIcon={<LinkedInIcon />}
+                      href="https://www.linkedin.com/in/xuban-ceccon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ fontSize: '0.6rem', padding: '5px 11px' }}
+                    >
+                      View Full Profile on LinkedIn
+                    </Button>
+                  </Box>
+                  <Divider sx={{ mb: 3 }} />
+
+                  {/* Projects */}
+
+                  <ProjectsComponent />
+
 
                   <Divider sx={{ mb: 3 }} />
 
@@ -127,7 +112,7 @@ function About() {
                     <ListItem>
                       <ListItemText
                         primary="Startups"
-                        secondary="Exploring innovative business models in tech and IoT."
+                        secondary="I'm extremely interested in the startup world. If you have any idea or product that you want to talk about please reach out."
                         primaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                         secondaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                       />
@@ -136,7 +121,7 @@ function About() {
                     <ListItem>
                       <ListItemText
                         primary="Machine Learning"
-                        secondary="Focus on computer vision, safety, and practical applications."
+                        secondary="I like Machine Learning and specially computer vision and LLMs. I'm trying to understand transformers as everything has converge towards it."
                         primaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                         secondaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                       />
@@ -144,8 +129,8 @@ function About() {
                     </ListItem>
                     <ListItem>
                       <ListItemText
-                        primary="Productivity & Well-Being"
-                        secondary="Building tools to combat online content addiction, like YawningFace."
+                        primary="Drones"
+                        secondary="I like drones and I'm building an fpv race drone."
                         primaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                         secondaryTypographyProps={{ fontFamily: 'Roboto, sans-serif' }}
                       />
@@ -265,35 +250,7 @@ function About() {
                       />
                     </Grid>
                   </Grid>
-                  <Typography
-                    variant="h5"
-                    component="h2"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}
-                  >
-                    Academic and Work Background
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    paragraph
-                    sx={{ mb: 3, fontFamily: 'Roboto, sans-serif' }}
-                  >
-                    Engineering degree from ESTIA and a computer and machine vision MSc from Cranfield University. I work as a consultant and researcher in Ikerlan. For the up to date Academic and Work profile, head to my LinkedIn: 
-                    {/* LinkedIn Button */}
-                  </Typography>
-                  <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      startIcon={<LinkedInIcon />}
-                      href="https://www.linkedin.com/in/xuban-ceccon"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{ fontSize: '1rem', padding: '8px 16px' }}
-                    >
-                      View Full Profile on LinkedIn
-                    </Button>
-                  </Box>
+                  
                 </Paper>
               </Container>
             </Box>
