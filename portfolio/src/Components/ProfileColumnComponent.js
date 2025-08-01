@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Typography, Avatar, IconButton } from '@mui/material';
-import { Twitter, GitHub, LocationOn, LinkedIn } from '@mui/icons-material';
+import { Box, Typography, Avatar, List, ListItem, ListItemIcon, ListItemText, IconButton } from '@mui/material';
+import { LinkedIn, Twitter, GitHub, Email, Language, LocationOn } from '@mui/icons-material';
 
 const ProfileColumn = () => {
   return (
@@ -11,30 +11,104 @@ const ProfileColumn = () => {
         alignItems: 'flex-start',
         p: 4,
         maxWidth: 360,
-        margin: 'auto'
+        margin: 'auto',
+        bgcolor: 'transparent', // Restore transparent background to inherit #e6e6e6 from About page
       }}
     >
       <Avatar
         alt="Profile Picture"
         src={`${process.env.PUBLIC_URL}/profile.png`}
-        sx={{ width: 200, height: 200, mb: 2 }}
+        sx={{ width: 200, height: 200, mb: 2 }} // Restore original avatar size and spacing
       />
-      <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#000' }}>
+      <Typography
+        variant="h5"
+        component="h1"
+        sx={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#000', fontFamily: 'Roboto, sans-serif' }}
+      >
         Xuban
       </Typography>
       <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-        <LocationOn color="action" />
-        <Typography variant="body2" sx={{ fontSize: '1rem' }}>Basque Country</Typography>
+        <LocationOn sx={{ color: 'action', mr: 1 }} />
+        <Typography variant="body2" sx={{ fontSize: '1rem', fontFamily: 'Roboto, sans-serif' }}>
+          Basque Country
+        </Typography>
       </Box>
-      <Typography variant="body1" sx={{ mt: 2, textAlign: 'left', fontSize: '1rem' }}>
-        Hello, my name is Xuban, and I develop websites in my free time. I'm particularly interested in online content addiction and how to combat it. For this, I'm developing applications that help me, and hopefully others, to reduce their online time and improve its quality.
+      <Typography
+        variant="body1"
+        sx={{ mt: 2, textAlign: 'left', fontSize: '1rem', lineHeight: 1.6, fontFamily: 'Roboto, sans-serif' }}
+      >
+        Hi! I'm an engineer from the Basque Country. I work in the cooperative company Ikerlan doing consulting on Cybersecurity (secure boot of microcontrollers) and research in the area of AI (computer vision) safety. Previously I worked in the startup FLEETI in the IoT domain. My areas of interest are Startups and Machine Learning. I'm building YawningFace to develop productivity tools.
       </Typography>
+
+      <Box sx={{ mt: 2, width: '100%' }}>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: 'bold', fontSize: '1.2rem', mb: 1, fontFamily: 'Roboto, sans-serif' }}
+        >
+          Contact
+        </Typography>
+        <List dense>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <Email sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText
+              primary="xceccon@ikerlan.es"
+              primaryTypographyProps={{ fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+            />
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <Email sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText
+              primary="xuban.ceccon@gmail.com"
+              primaryTypographyProps={{ fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+            />
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <LinkedIn sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText>
+              <a
+                href="https://www.linkedin.com/in/xuban-ceccon"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+              >
+                linkedin.com/in/xuban-ceccon
+              </a>
+            </ListItemText>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <Language sx={{ color: 'action' }} />
+            </ListItemIcon>
+            <ListItemText>
+              <a
+                href="https://huggingface.co/Xuban"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: '#1976d2', fontSize: '0.95rem', fontFamily: 'Roboto, sans-serif' }}
+              >
+                huggingface.co/Xuban
+              </a>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+
       <Box sx={{ display: 'flex', mt: 2 }}>
-        <IconButton href="https://www.linkedin.com/in/xuban-ceccon" color="inherit"><LinkedIn /></IconButton>
-        <IconButton href="https://twitter.com/EHxuban11" color="inherit"><Twitter /></IconButton>
-        <IconButton href="https://github.com/EHxuban11" color="inherit"><GitHub /></IconButton>
-        {/* <IconButton href="https://www.youtube.com/@EHxuban11" color="inherit"><YouTube /></IconButton>*/}
-        {/* <IconButton href="https://instagram.com" color="inherit"><Instagram /></IconButton> */}
+        <IconButton href="https://www.linkedin.com/in/xuban-ceccon" target="_blank" rel="noopener noreferrer" color="inherit">
+          <LinkedIn />
+        </IconButton>
+        <IconButton href="https://twitter.com/EHxuban11" target="_blank" rel="noopener noreferrer" color="inherit">
+          <Twitter />
+        </IconButton>
+        <IconButton href="https://github.com/EHxuban11" target="_blank" rel="noopener noreferrer" color="inherit">
+          <GitHub />
+        </IconButton>
       </Box>
     </Box>
   );
