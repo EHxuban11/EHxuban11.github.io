@@ -5,6 +5,8 @@ The webiste is made with react and deployed directly in github pages which is a 
 
 Here is the production link: https://ehxuban11.github.io
 
+![Quick demo of the site](demo.gif)
+
 ## How to run
 nodejs needs to be installed as a prerequisite
 
