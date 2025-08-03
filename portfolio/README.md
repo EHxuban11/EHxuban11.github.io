@@ -1,16 +1,36 @@
-# How this works
+# My Portfolio Website Readme
+This repository contains my portfolio website.
+
+The webiste is made with react and deployed directly in github pages which is a free hosting option.
+
+Here is the production link: https://ehxuban11.github.io
+
+## How to run
+nodejs needs to be installed as a prerequisite
+
+
+Change directory to portfolio
+```
+cd portfolio
+```
+
+To install dependencies (first time only):
+```
+npm install
+```
+
+To run the proyect in local
+```
+npm start
+```
+
+To put in production (on the internet)
+This will only work if vscode is well connected to github (log in)
+```
 npm run deploy
+```
+In github pages a small ocnfiguration needs to be done in order to make the github page work. Go to the repository options, to the pages tab. Then put deploy from branch and select the gh-page branch-
 
 
-# More info about how this works.
-Develop in the main branch
-install the gh-pages package:     npm install gh-pages --save-dev
-Deploy running "npm run deploy" command   --> This will only work if the vscode git is well connected to github.
-In github pages put deploy from branch and select the gh-page branch
-Npm run deploy takes the create-react-app project and makes it js and puts it in the gh-pages branch. It will automatically deploy in github. You can watch the process of deploying in the github actions page of the project repo. You need to configure the page in github for publishing.
-
-# Another way of running
-make the npm run deploy command directly from github desktop terminal.
- 
-# Temporary notes:
-Press: https://www.defense.gouv.fr/aid/actualites/defi-24h-innover-au-profit-larmee-terre
+## Additional context
+This is using the gh-pages package under the hood which we installed when doing the npm install command because this installs the package.json file which contains gh-pages dependency.
