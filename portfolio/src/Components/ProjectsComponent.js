@@ -13,11 +13,11 @@ import {
 
 const projects = [
   {
-    name: 'Yawning Block',
+    name: 'Block',
     link: 'https://github.com/Yawningface/block',
     productionLink: 'https://chromewebstore.google.com/detail/block/kfnhibndbkdjcplihjhbhdhclpbiocen',
     description:
-      'YawningFace is a set of productivity and digital wellbeing tools. Yawning Block is the Chrome extension that blocks distractions so you can focus on what matters.',
+      'Block is a distractions blocker so you can focus on what matters. Chrome extension released. Stay tuned for Iphone, Android, PC and MAC versions.',
   },
   {
     name: 'Browser Start Page',
@@ -32,7 +32,7 @@ const projects = [
     link: 'https://github.com/Yawningface/labs',
     productionLink: 'https://labs.yawningface.org/',
     description:
-      'More than 12 in-browser image and PDF utilities—compression, format conversion, background removal and more. Everything runs locally so nobody steals your data.',
+      'More than 12 in-browser image and PDF utilities: compression, format conversion, background removal and more. Everything runs locally so nobody steals your data.',
   },
   {
     name: 'Notion Widgets',
@@ -46,7 +46,7 @@ const projects = [
     link: 'https://github.com/Yawningface/pomodoro',
     productionLink: 'https://pomodoro.yawningface.org/',
     description:
-      'For those who like to structure work sessions with the Pomodoro technique. The most straightforward adless Pomodoro timer on the internet. Open sourced.',
+      'For those who like to structure work sessions with the Pomodoro technique. The most straightforward adless Pomodoro timer on the internet.',
   },
   {
     name: 'Lofi Hip Hop Beats',
