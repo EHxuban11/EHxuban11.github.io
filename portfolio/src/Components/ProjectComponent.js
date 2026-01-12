@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Card, CardActionArea, Typography, Box, Chip, Snackbar, IconButton, Dialog, DialogContent } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 
@@ -278,6 +279,28 @@ const ProjectComponent = ({ name, tags, link, revenue, description, logo, media 
       </Dialog>
     </>
   );
+};
+
+ProjectComponent.propTypes = {
+  name: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  link: PropTypes.string,
+  revenue: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  media: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.oneOf(['image', 'video']).isRequired,
+      src: PropTypes.string.isRequired,
+    })
+  ),
+};
+
+ProjectComponent.defaultProps = {
+  tags: [],
+  link: '',
+  revenue: '',
+  media: [],
 };
 
 export default ProjectComponent;

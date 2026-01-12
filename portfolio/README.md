@@ -21,7 +21,7 @@ To install dependencies (first time only):
 npm install
 ```
 
-To run the proyect in local
+To run the project locally
 ```
 npm start
 ```
@@ -31,7 +31,7 @@ This will only work if vscode is well connected to github (log in)
 ```
 npm run deploy
 ```
-In github pages a small ocnfiguration needs to be done in order to make the github page work. Go to the repository options, to the pages tab. Then put deploy from branch and select the gh-page branch-
+In GitHub Pages a small configuration needs to be done in order to make the github page work. Go to the repository options, to the pages tab. Then put deploy from branch and select the gh-page branch-
 
 
 ## Additional context
