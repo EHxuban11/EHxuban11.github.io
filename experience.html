@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience – Xuban Ceccon</title>
+  <meta name="description" content="Work experience and education of Xuban Ceccon. ML engineer, research engineer, computer vision." />
+  <meta property="og:title" content="Experience – Xuban Ceccon" />
+  <meta property="og:description" content="Work experience and education." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@EHxuban11" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>X</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div>
+      <div>
+        <a href="index.html">xuban</a>
+        <a href="projects.html">projects</a>
+        <a href="experience.html" class="active">experience</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-toggle-light">light</span>
+        <span class="theme-toggle-dark">dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Experience</h1>
+
+    <h2>Multiverse Computing</h2>
+    <p>Machine Learning Engineer · Nov 2025 – present · Madrid</p>
+    <p>Working on large language models at Spain's first AI unicorn. Focused on model compression and efficient inference.</p>
+
+    <h2>IKERLAN</h2>
+    <p>Research Engineer · Nov 2024 – Nov 2025 · Basque Country</p>
+    <p>Computer vision for safety-critical systems across European and national research projects. Built object detection and segmentation pipelines, ROS 2 integrations, fault-injection testing, dataset creation in Label Studio, and model evaluation infrastructure. Worked on SAFEXPLAIN (EU) and CAPSUlIA (Spain) alongside PAL Robotics and the Barcelona Supercomputing Center.</p>
+
+    <h2>Fleeti</h2>
+    <p>Engineer · Sep 2022 – Sep 2024 · France</p>
+    <p>Fleet management startup. Reduced asset disconnection rates and data usage. Built a RAG chatbot integrating Notion's API with a React frontend and Flask backend. Researched and documented remote telematic device configuration, eliminating manual processes.</p>
+
+    <h2>Earlier</h2>
+    <p>Cybersecurity internship at IKERLAN working on secure boot for embedded systems with Yocto and HABv4. Electronics internship at Alivesports building Arduino-based escape room hardware.</p>
+
+    <h1 style="text-align: center; font-style: italic; margin-bottom: 2em;">Education</h1>
+
+    <h2>Cranfield University</h2>
+    <p>MSc Computational and Software Techniques in Engineering · First Class · 2023 – 2024</p>
+    <p>Computer and Machine Vision option. Thesis on eco-driving: modeling excess emissions in logistics using telematic data and machine learning.</p>
+
+    <h2>ESTIA Institute of Technology</h2>
+    <p>Engineering degree · Electronics and Computer Science · 2019 – 2023</p>
+    <p>Trilingual engineering school in France. Foundations in electronics, computer science, mechanics, and project management.</p>
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://www.linkedin.com/in/xuban-ceccon/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/EHxuban11" target="_blank" rel="noopener">github</a>
+      <a href="https://x.com/EHxuban11" target="_blank" rel="noopener" style="margin-right: 0;">x</a>
+    </div>
+    <div>&copy; 2026</div>
+  </footer>
+
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light') {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+
+    function toggleTheme() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+  </script>
+
+</body>
+</html>

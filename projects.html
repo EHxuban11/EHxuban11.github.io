@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Xuban Ceccon</title>
+  <meta name="description" content="Projects by Xuban Ceccon. LibreYOLO, YawningFace, and other open source tools." />
+  <meta property="og:title" content="Projects – Xuban Ceccon" />
+  <meta property="og:description" content="LibreYOLO, YawningFace, and other projects." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@EHxuban11" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>X</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div>
+      <div>
+        <a href="index.html">xuban</a>
+        <a href="projects.html" class="active">projects</a>
+        <a href="experience.html">experience</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-toggle-light">light</span>
+        <span class="theme-toggle-dark">dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Projects</h1>
+
+    <h2>LibreYOLO</h2>
+    <p>MIT-licensed open source computer vision library built as a truly open alternative to Ultralytics. Production-ready with support for training, validation, inference and export of YOLOX, YOLO9, RT-DETR, and RF-DETR models. 125+ GitHub stars since launch.</p>
+    <p><a href="https://github.com/LibreYOLO/libreyolo" target="_blank" rel="noopener">github</a> · <a href="https://www.libreyolo.com/" target="_blank" rel="noopener">website</a></p>
+
+    <h2>YawningFace</h2>
+    <p>Tools to help you take back control of your screen time. Distraction blockers for iPhone that block certain apps at certain times or after exceeding a daily usage limit.</p>
+    <p><a href="https://labs.yawningface.org/" target="_blank" rel="noopener">labs</a></p>
+
+    <h2>Other projects</h2>
+    <p><a href="https://www.ekitaldi.org/" target="_blank" rel="noopener">Ekitaldi</a>, photo gallery platform, an alternative to Pixieset.</p>
+    <p><a href="https://jauzi.org" target="_blank" rel="noopener">Jauzi</a>, link manager.</p>
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://www.linkedin.com/in/xuban-ceccon/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/EHxuban11" target="_blank" rel="noopener">github</a>
+      <a href="https://x.com/EHxuban11" target="_blank" rel="noopener" style="margin-right: 0;">x</a>
+    </div>
+    <div>&copy; 2026</div>
+  </footer>
+
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light') {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+
+    function toggleTheme() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+  </script>
+
+</body>
+</html>

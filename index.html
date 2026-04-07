@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xuban Ceccon</title>
+  <meta name="description" content="Machine learning engineer at Multiverse Computing. Creator of LibreYOLO. Based in the Basque Country." />
+  <meta property="og:title" content="Xuban Ceccon" />
+  <meta property="og:description" content="Machine learning engineer. Creator of LibreYOLO. Basque Country." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ehxuban11.github.io" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@EHxuban11" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>X</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div>
+      <div>
+        <a href="index.html" class="active">xuban</a>
+        <a href="projects.html">projects</a>
+        <a href="experience.html">experience</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-toggle-light">light</span>
+        <span class="theme-toggle-dark">dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Xuban Ceccon</h1>
+    <p>Machine learning engineer at Multiverse Computing in Madrid. Originally from the Basque Country.</p>
+
+    <h2>Background</h2>
+    <p>I studied electronics and computer science at ESTIA in Bidart, France, then completed a master's in computational techniques and computer vision at Cranfield University in the UK. Along the way, I interned at IKERLAN working on cybersecurity for embedded systems, which introduced me to the world of research.</p>
+
+    <h2>Now</h2>
+    <p>I work on large language models at Multiverse Computing, Spain's first AI unicorn. Before this, I spent a year at IKERLAN working on computer vision, where I ran into the limitations of existing YOLO libraries and decided to build LibreYOLO. Before that, two years at Fleeti working on fleet management in France.</p>
+
+    <h2>Open source</h2>
+    <p>I created <a href="https://github.com/LibreYOLO/libreyolo">LibreYOLO</a>, a MIT-licensed computer vision library designed as a truly open alternative to proprietary solutions. Production-ready with support for YOLOX, YOLO9, RT-DETR, and RF-DETR.</p>
+
+    <h2>Beyond work</h2>
+    <p>I'm a Cursor Ambassador and organize tech meetups in the Basque Country. I speak Basque, Spanish, French, and English.</p>
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://www.linkedin.com/in/xuban-ceccon/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/EHxuban11" target="_blank" rel="noopener">github</a>
+      <a href="https://x.com/EHxuban11" target="_blank" rel="noopener" style="margin-right: 0;">x</a>
+    </div>
+    <div>&copy; 2026</div>
+  </footer>
+
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light') {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+
+    function toggleTheme() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+  </script>
+
+</body>
+</html>
