@@ -48,6 +48,10 @@ h1:first-child {
   margin-top: 0;
 }
 
+h1.centered {
+  text-align: center;
+}
+
 h2 {
   margin-top: 2rem;
 }
